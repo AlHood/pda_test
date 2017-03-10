@@ -1,7 +1,7 @@
-PDA Alastair Hood 
+//  PDA Alastair Hood 
 
-class Pda {
-  private boolean func1(int val){
+public class Pda {
+  public boolean func1(int val){
     if(val == 1){
       return true;
     }else{
@@ -9,7 +9,7 @@ class Pda {
     }
   }
 
-  private int max(int a, int b){
+  public int max(int a, int b){
     if(a >= b){
       return a;
     } 
@@ -18,20 +18,23 @@ class Pda {
     }
   }
 
-  private int looper(){
+  public int looper(){
     int i = 0;
     while(i <= 10){
       i++;
-      return i;
     }
-  } 
+    return i;
+  }
 
-   public void checkLoop(){
-  if (i == 11){
+
+   public String checkLoop(){
+  if (looper() == 11){
     return "looper passed";
   }
   else{
     return "looper failed";
   }
   
+}
+
 }
